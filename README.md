@@ -26,11 +26,24 @@ cmake --build build
 
 ## Install
 
+There are two installation modes:
+
+- Local install: copies the plugin into `~/.local` and is enough if your Kate session already sees local Qt plugin paths.
+- System install: copies the plugin into the Kate/KF6 plugin directory under `/usr/lib`, which makes it available globally without relying on environment variables.
+
+### Local install
+
 ```bash
 cmake --install build --prefix "$HOME/.local"
 ```
 
-That installs the plugin into Kate's local plugin directory under `~/.local`.
+### System install
+
+```bash
+sudo ./install.sh
+```
+
+Use this if you want the plugin to be available in Kate without `QT_PLUGIN_PATH` or any custom launcher.
 
 ## Enable in Kate
 
