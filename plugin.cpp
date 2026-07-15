@@ -30,6 +30,7 @@
 #include <QMessageBox>
 #include <QColor>
 #include <QColorDialog>
+#include <QKeySequence>
 #include <QJsonArray>
 #include <QJsonDocument>
 #include <QJsonObject>
@@ -568,6 +569,7 @@ void KateCodexPanelView::buildUi()
     buttonRow->setSpacing(2);
     m_sendButton = new QPushButton(i18n("Send"), composer);
     m_cancelButton = new QPushButton(i18n("Cancel"), composer);
+    m_cancelButton->setShortcut(QKeySequence());
     buttonRow->addWidget(m_sendButton);
     buttonRow->addWidget(m_cancelButton);
     buttonRow->addStretch(1);
