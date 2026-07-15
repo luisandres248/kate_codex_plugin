@@ -1,0 +1,5 @@
+build/
+.cache/
+*.kdev4
+*.kate-swp
+

@@ -1,0 +1,13 @@
+{
+  "KPlugin": {
+    "Name": "Kate Codex Panel",
+    "Description": "Run one-shot Codex prompts from a Kate sidebar panel",
+    "Version": "0.1.0",
+    "License": "LGPL",
+    "Authors": [
+      {
+        "Name": "OpenAI"
+      }
+    ]
+  }
+}
